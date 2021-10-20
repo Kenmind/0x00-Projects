@@ -1,0 +1,165 @@
+html 
+{
+background-image: url("bg3.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 800px;
+}
+
+aside, article
+{
+color: white;
+background-color: none;
+font-family: Times new roman;
+}
+
+header, footer
+{
+background-color: lightblue;
+flex: top;
+/*background-color: white;*/
+color: white;
+
+}
+
+a:hover 
+{
+background-color: yellow;
+color: black;
+font-weight: lighter;
+transition: background-color 1s;
+opacity: 2;
+}
+
+:visited
+{
+color: brown;
+}
+
+:link
+{
+color: blue;
+background-color: none;
+font-weight: bold;
+}
+
+:active
+{
+color: white;
+}
+
+th,td
+{
+padding-left: 20px;
+/*padding-right: 40px;*/
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.head
+{
+align-content: right;
+align-self: right;
+flex: top;
+}
+
+.foot
+{
+align-content: inherit;
+flex: bottom;
+}
+
+table
+{
+border-spacing: 20px;
+align-self: right;
+flex: right;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+button:hover {
+    opacity: 2;
+    color: black;
+    background-color: blanchedalmond;
+    border: 1px solid rgba(71, 5, 252, 0.925);
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+}
+/* The modal (background) */
+.modal {
+display: none; /*Hidden by default */
+position: fixed; /*Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 90%; /* not full width*/
+height: 100%; /* full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: skyblue;
+padding-top: 50px;
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* could be more or less on screen size */
+}
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+.close:hover, .close:focus {
+    color: #f44336;
+    cursor: pointer;
+
+}/* clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Change styles for cancel and signup buttons on small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
