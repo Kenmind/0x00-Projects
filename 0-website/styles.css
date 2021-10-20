@@ -14,6 +14,16 @@ background-color: none;
 font-family: Times new roman;
 }
 
+hr
+{
+flex: left;
+width: 100%;
+background-color: black;
+color: black;
+align-self: left;
+size: 2px;
+}
+
 header, footer
 {
 background-color: lightblue;
@@ -79,7 +89,7 @@ flex: right;
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-    width: 80%;
+    width: 50%;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
@@ -96,11 +106,11 @@ input[type=text]:focus, input[type=password]:focus {
 button {
     background-color: #04AA6D;
     color: white;
-    padding: 14px 20px;
+    padding: 10px 16px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 20%;
     opacity: 0.9;
 }
 button:hover {
@@ -118,7 +128,7 @@ button:hover {
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
     float: left;
-    width: 50%;
+    width: 40%;
 }
 /* The modal (background) */
 .modal {
@@ -128,17 +138,18 @@ z-index: 1; /* Sit on top */
 left: 0;
 top: 0;
 width: 90%; /* not full width*/
-height: 100%; /* full height */
+height: 90%; /* full height */
 overflow: auto; /* Enable scroll if needed */
 background-color: skyblue;
 padding-top: 50px;
 }
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    background-color: skyblue;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
+    border: none;
     width: 80%; /* could be more or less on screen size */
+    color: black;
 }
 .close {
     position: absolute;
@@ -161,5 +172,5 @@ padding-top: 50px;
 /* Change styles for cancel and signup buttons on small screens */
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
-        width: 100%;
+        width: 90%;
     }
