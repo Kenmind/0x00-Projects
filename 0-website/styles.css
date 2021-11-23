@@ -89,7 +89,11 @@ flex: right;
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
+<<<<<<< HEAD
     width: 50%;
+=======
+    width: 60%;
+>>>>>>> main
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
@@ -98,7 +102,7 @@ input[type=text], input[type=password] {
 }
 /* Add a background color when the inputs get focus */
 input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
+    background-color: blue;
     outline: none;
 }
 
@@ -114,7 +118,7 @@ button {
     opacity: 0.9;
 }
 button:hover {
-    opacity: 2;
+    opacity: 0.4;
     color: black;
     background-color: blanchedalmond;
     border: 1px solid rgba(71, 5, 252, 0.925);
@@ -137,19 +141,35 @@ position: fixed; /*Stay in place */
 z-index: 1; /* Sit on top */
 left: 0;
 top: 0;
+<<<<<<< HEAD
 width: 90%; /* not full width*/
 height: 90%; /* full height */
+=======
+width: 100%; /* not full width*/
+height: 100%; /* full height */
+>>>>>>> main
 overflow: auto; /* Enable scroll if needed */
 background-color: skyblue;
+background-image: url(bg1.png);
 padding-top: 50px;
 }
 /* Modal Content/Box */
 .modal-content {
+<<<<<<< HEAD
     background-color: skyblue;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: none;
     width: 80%; /* could be more or less on screen size */
     color: black;
+=======
+    background-color: #fefefe;
+    margin: 15% 15% 40% 15%; /* 15% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%; /* could be more or less on screen size */
+    height: auto;
+    color: white;
+    background-image: url(bg0.jpeg);
+>>>>>>> main
 }
 .close {
     position: absolute;
@@ -172,5 +192,16 @@ padding-top: 50px;
 /* Change styles for cancel and signup buttons on small screens */
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
+<<<<<<< HEAD
         width: 90%;
     }
+=======
+        width: 100%;
+}
+
+form
+{
+color: black;
+
+}
+>>>>>>> main
