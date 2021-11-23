@@ -79,7 +79,7 @@ flex: right;
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-    width: 80%;
+    width: 60%;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
@@ -88,7 +88,7 @@ input[type=text], input[type=password] {
 }
 /* Add a background color when the inputs get focus */
 input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
+    background-color: blue;
     outline: none;
 }
 
@@ -100,11 +100,11 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 20%;
     opacity: 0.9;
 }
 button:hover {
-    opacity: 2;
+    opacity: 0.4;
     color: black;
     background-color: blanchedalmond;
     border: 1px solid rgba(71, 5, 252, 0.925);
@@ -127,18 +127,22 @@ position: fixed; /*Stay in place */
 z-index: 1; /* Sit on top */
 left: 0;
 top: 0;
-width: 90%; /* not full width*/
+width: 100%; /* not full width*/
 height: 100%; /* full height */
 overflow: auto; /* Enable scroll if needed */
 background-color: skyblue;
+background-image: url(bg1.png);
 padding-top: 50px;
 }
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 15% 15% 40% 15%; /* 15% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%; /* could be more or less on screen size */
+    width: 60%; /* could be more or less on screen size */
+    height: auto;
+    color: white;
+    background-image: url(bg0.jpeg);
 }
 .close {
     position: absolute;
@@ -162,4 +166,10 @@ padding-top: 50px;
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
         width: 100%;
-    }
+}
+
+form
+{
+color: black;
+
+}
